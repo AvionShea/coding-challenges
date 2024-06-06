@@ -7,16 +7,13 @@
     * 'abcdef' => ['ab', 'cd', 'ef']
  */
 function solution(str) {
-    const letters = str.split('');
-    let text = '';
-    for (const letter of letters) {
-        text += letter;
-        if (text.replace(/ /g, '').length % 2 === 0)
-            letter !== letters[letters.length - 1] && (text += ' ');
-    }
-    if (str.length % 2 !== 0) text += '_';
-    console.log(text);
-    return (text === '' && []) || text.split(' ');
-}
+    var arr = str.split('')
+    var res = []
 
-console.log(solution(''));
+    for (let i = 0; i < arr.length; i += 2) {
+        if (arr[i + 1]) res.push(arr[i] + arr[i + 1])
+        else res.push(arr[i] + '_')
+    }
+
+    return res
+}
