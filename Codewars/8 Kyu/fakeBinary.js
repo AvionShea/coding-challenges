@@ -3,3 +3,5 @@
 
     Note: input will never be an empty string
  */
+
+const fakeBin = (str) => str.split("").map(num => num < 5 ? "0" : "1").join("")
