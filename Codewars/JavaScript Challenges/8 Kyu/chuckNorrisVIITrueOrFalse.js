@@ -8,4 +8,4 @@ Your task is to be more like Chuck (ha! good luck!). You must return false witho
 Go show some truth who's boss!
 */
 
-ifChuckSaysSo = () => !true
+const ifChuckSaysSo = () => !true
