@@ -9,6 +9,6 @@ Return your answer as a number.
   for(let i = 0; i < arr.length; i++){
     let element = Number(arr[i]);
     sum += element;
-  }
+  };
   return sum;
  };
