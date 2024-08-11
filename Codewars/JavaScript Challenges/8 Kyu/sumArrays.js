@@ -21,6 +21,7 @@ We're testing basic loops and math operations. This is for beginners who are jus
 Advanced users may find this extremely easy and can easily write this in one line.
 */
 
+//original
 const sum = (numbers) => {
     "use strict";
     if (numbers == 0) {
@@ -29,3 +30,6 @@ const sum = (numbers) => {
         return numbers.map((number) => number - 0).reduce((a, b) => a + b);
     };
 };
+
+//refactor
+const sum = (numbers) => numbers.reduce((a, b) => a + b, 0);
