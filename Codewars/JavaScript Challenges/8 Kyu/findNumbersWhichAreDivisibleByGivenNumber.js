@@ -6,6 +6,7 @@ Example(Input1, Input2 --> Output)
 [1, 2, 3, 4, 5, 6], 2 --> [2, 4, 6]
 */
 
+//Original
 let divisibleBy = (numbers, divisor) => {
     let list = [];
     numbers.forEach((number) => {
@@ -15,3 +16,6 @@ let divisibleBy = (numbers, divisor) => {
     });
     return list;
 };
+
+//refactor
+let divisibleBy = (numbers, divisor) => numbers.filter(number => number % divisor === 0);
