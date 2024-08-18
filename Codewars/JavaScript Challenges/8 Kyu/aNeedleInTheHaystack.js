@@ -14,7 +14,11 @@ Example(Input --> Output)
 Note: In COBOL, it should return "found the needle at position 6"
 */
 
+//Original
 const findNeedle = (haystack) => {
     let index = haystack.indexOf("needle");
     return `found the needle at position ${index}`
 };
+
+//refactor
+const findNeedle = (haystack) => `found the needle at position ${haystack.indexOf("needle")}`;
