@@ -18,6 +18,10 @@ Ex: [1,1,2,3,4,5,5,6] -> true; [1, 2, 3, 4, 5, 6] -> false
 Pseudo: take in an arr, check arr for multiples, output true or false
 */
 
+//original
 const hasDuplicate = (nums) => {
     return (new Set(nums).size !== nums.length);
 };
+
+//refactor
+const hasDuplicate = (nums) => (new Set(nums).size !== nums.length);
