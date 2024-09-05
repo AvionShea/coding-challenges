@@ -12,6 +12,4 @@ Examples
 "Hi"      ---> "Hi!"
 */
 
-const remove = (str) => str.split().remove("!").join() + "!";
-
-console.log(remove("!Hi"))
+const remove = (string) => string.replaceAll("!", "") + "!"
