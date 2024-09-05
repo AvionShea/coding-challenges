@@ -15,3 +15,6 @@ function descendingOrder(n) {
     num = num.split("").sort((a, b) => b - a).join("");
     return Number(num);
 };
+
+//one-liner refactor
+const descendingOrder = (n) => Number(n.toString().split("").sort((a, b) => b - a).join(""));
