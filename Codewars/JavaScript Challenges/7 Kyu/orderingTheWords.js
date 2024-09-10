@@ -18,3 +18,6 @@ Good luck! Hope you enjoy it
 */
 
 const orderWord = (s) => s == "" || s == null ? "Invalid String!" : s.split("").sort().join("");
+
+//refactor
+const orderWord = (s) => s ? s.split("").sort().join("") : "Invalid String!";
