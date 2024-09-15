@@ -25,3 +25,6 @@ const alphabetic = (word) => {
   };
   return false;
 };
+
+//refactor
+const alphabetic = (word) => word === word.split("").sort().join("");
