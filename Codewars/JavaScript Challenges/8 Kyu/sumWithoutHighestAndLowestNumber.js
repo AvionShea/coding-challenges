@@ -26,3 +26,12 @@ function sumArray(arr){
     return sum;
   };
 };
+
+//refactor
+function sumArray(arr){
+  if(arr == null || arr.length <= 1){
+    return 0;
+  }else{
+    return arr.sort((a,b) => a - b).slice(1, -1).reduce((a,b) => a + b, 0);
+  };
+};
