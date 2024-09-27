@@ -9,3 +9,6 @@ Return a table with one column (mod) which is the output of number1 modulus numb
 */
 
 SELECT number1 % number2 as mod FROM decimals;
+
+/*ALTERNATIVE*/
+SELECT mod(number1, number2) as mod FROM decimals;
