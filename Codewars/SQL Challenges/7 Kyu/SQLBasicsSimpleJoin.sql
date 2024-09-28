@@ -16,3 +16,9 @@ You should return all product fields as well as the company name as "company_nam
 SELECT products.id, products.name, products.isbn, products.company_id, products.price, companies.name as company_name
 FROM products
     JOIN companies ON companies.id = products.company_id;
+
+-- REFACTOR --
+SELECT products.*, companies.name AS company_name
+FROM
+    products
+    JOIN companies ON company_id = companies.id;
