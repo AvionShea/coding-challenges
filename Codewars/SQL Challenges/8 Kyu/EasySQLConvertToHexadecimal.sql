@@ -13,4 +13,4 @@ legs
 arms
 */
 
-SELECT to_hex (legs) AS legs, to_hex (arms) AS arms FROM monsters;
+SELECT TO_HEX (legs) AS legs, TO_HEX (arms) AS arms FROM monsters;
