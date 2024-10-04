@@ -15,13 +15,12 @@ Return the domain name of the website as a string w/o https:// or .com
 An example would be: url = "http://www.zombie-bites.com"-> domain name = "zombie-bites"
 
 */
-function parseDomain(url){
+function domainName(url){
   //replace things we don't know with an empty str
   //split and grab domain from rest of str
   return url.replace("https://","").replace("http://","").replace("www.","").split(".")[0];
-
 };
 
-console.log(parseDomain("http://github.com/carbonfive/raygun"), "github")
-console.log(parseDomain("http://www.zombie-bites.com"), "zombie-bites")
-console.log(parseDomain("https://www.cnet.com"), "cnet")
+console.log(domainName("http://github.com/carbonfive/raygun"), "github")
+console.log(domainName("http://www.zombie-bites.com"), "zombie-bites")
+console.log(domainName("https://www.cnet.com"), "cnet")
