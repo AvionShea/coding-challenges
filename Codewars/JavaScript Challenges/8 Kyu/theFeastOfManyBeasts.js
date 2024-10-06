@@ -17,14 +17,14 @@ dog -> hotdogs -> false
 
 function feast(beast, dish) {
     //get first index of str for both the name and dish -- str[0] and dish[0]
-    let firstCharAni = beast[0];
+    let firstCharBeast = beast[0];
     let firstCharDish = dish[0];
 
     //get the last index of str for both the name and dish  -- str[str.length - 1] and dish[dish.length -1]
-    let lastCharAni = beast[beast.length - 1];
+    let lastCharBeast = beast[beast.length - 1];
     let lastCharDish = dish[dish.length - 1];
     //compare str[0] === dish[0] && compare str[str.length -1] === dish[dish.length - 1]
-    if (firstCharAni === firstCharDish && lastCharAni === lastCharDish) {
+    if (firstCharBeast === firstCharDish && lastCharBeast === lastCharDish) {
         return true
     } else {
         return false
