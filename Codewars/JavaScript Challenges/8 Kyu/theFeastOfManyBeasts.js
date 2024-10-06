@@ -12,7 +12,7 @@ take two str -> animal, dish name -> lowercase w/o special characters
 return boolean (t/f) if first character && last character of animal === first && last character of meal being brought
 great blue heron -> garlic naan -> true
 chickadee -> chocolate cake -> true
-dog -> hotdogs -> false
+dog -> hotdog -> false
 */
 
 function feast(beast, dish) {
@@ -20,7 +20,7 @@ function feast(beast, dish) {
     let firstCharBeast = beast[0];
     let firstCharDish = dish[0];
 
-    //get the last index of str for both the name and dish  -- str[str.length - 1] and dish[dish.length -1]
+    //get the last index of str for both the name and dish  -- str[str.length - 1] and dish[dish.length - 1]
     let lastCharBeast = beast[beast.length - 1];
     let lastCharDish = dish[dish.length - 1];
     //compare str[0] === dish[0] && compare str[str.length -1] === dish[dish.length - 1]
