@@ -27,4 +27,6 @@ function correct(str) {
     return str.split("").map((letter) => correctLetter.hasOwnProperty(letter) ? correctLetter[letter] : letter).join("");
 };
 
-console.log(correct("L0ND0N"))
+console.log(correct("L0ND0N"), "LONDON");
+console.log(correct("51NGAP0RE"), "SINGAPORE");
+console.log(correct("J. K. R0WL1NG - HARRY P0TTER AND THE G0BLET 0F F1RE"), "J. K. ROWLING - HARRY POTTER AND THE GOBLET OF FIRE");
