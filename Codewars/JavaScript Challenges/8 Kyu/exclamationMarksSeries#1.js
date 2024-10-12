@@ -17,6 +17,7 @@ if true, split str, slice starting at the index 0
 return str with applicable exclamation mark removed
 */
 
+// original solution
 function remove(str) {
     if (str[str.length - 1] == "!") {
         return str.split("").slice(0, str.split("").length - 1).join("");
