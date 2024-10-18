@@ -36,6 +36,14 @@ function countPositivesSumNegatives(arr) {
     return returnArr;
 }
 
+//refactor
+function countPositivesSumNegatives(input) {
+    return !input || !input.length ? [] : [
+        input.filter(e => e > 0).length,
+        input.filter(e => e < 0).reduce((a, b) => a + b, 0)
+    ];
+};
+
 console.log(countPositivesSumNegatives([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]), [10, -65])
-console.log(countPositivesSumNegatives([0, -14, -15]), [, -29])
+console.log(countPositivesSumNegatives([0, -14, -15]), [0, -29])
 console.log(countPositivesSumNegatives([]), [])
