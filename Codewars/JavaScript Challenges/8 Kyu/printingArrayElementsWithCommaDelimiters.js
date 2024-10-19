@@ -19,6 +19,9 @@ function printArray(array) {
     return array.join(",");
 };
 
+//refactor
+const printArray = arr => arr.join();
+
 console.log(printArray(["h", "o", "l", "a"]), "h,o,l,a")
 console.log(printArray([true, false, true, true, false]), "true,false,true,true,false")
 console.log(printArray(["3", "2", "1", "0"]), "3,2,1,0",)
