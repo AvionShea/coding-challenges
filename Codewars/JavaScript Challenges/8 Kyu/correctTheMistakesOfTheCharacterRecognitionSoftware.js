@@ -1,4 +1,6 @@
 /*
+https://www.codewars.com/kata/577bd026df78c19bca0002c0
+
 Description:
 Character recognition software is widely used to digitise printed texts. Thus the texts can be edited, searched and stored on a computer.
 
