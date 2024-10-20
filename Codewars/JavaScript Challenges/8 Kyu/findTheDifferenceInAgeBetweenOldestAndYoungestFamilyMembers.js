@@ -21,6 +21,14 @@ function differenceInAges(ages) {
     return arr;
 }
 
+//refactor
+function differenceInAges(ages) {
+    let maxAge = Math.max(...ages),
+        minAge = Math.min(...ages),
+        difference = maxAge - minAge
+
+    return [minAge, maxAge, difference]
+}
 console.log(differenceInAges([25, 98, 32, 101, 2]), [101, 2, 99])
 console.log(differenceInAges([0, 76, 1, 48, 82]), [82, 0, 82])
 console.log(differenceInAges([101, 62, 51, 11, 27]), [101, 11, 90])
