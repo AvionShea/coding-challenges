@@ -7,7 +7,7 @@ At the annual family gathering, the family likes to find the oldest living famil
 You will be given an array of all the family members' ages, in any order. The ages will be given in whole numbers, so a baby of 5 months, will have an ascribed ‘age’ of 0. Return a new array (a tuple in Python) with [youngest age, oldest age, difference between the youngest and oldest age].
 
 arr -> ints only -> no str
-return arr -> Max # -> Min # -> diff b/t Max and Min
+return arr -> Min # -> Max # -> diff b/t Max and Min
 */
 
 function differenceInAges(ages) {
