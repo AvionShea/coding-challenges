@@ -1,4 +1,6 @@
 /*
+https://www.codewars.com/kata/5bb904724c47249b10000131
+
 Description:
 Our football team has finished the championship.
 
