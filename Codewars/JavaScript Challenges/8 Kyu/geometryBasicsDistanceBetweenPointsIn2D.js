@@ -1,4 +1,6 @@
 /*
+https://www.codewars.com/kata/58dced7b702b805b200000be
+
 Description:
 This series of katas will introduce you to basics of doing geometry with computers.
 
@@ -22,5 +24,5 @@ function distanceBetweenPoints(a, b) {
   const x = a.x - b.x;
   const y = a.y - b.y;
 
-  return Math.sqrt(x**2 + y**2);
+  return Math.sqrt(x ** 2 + y ** 2);
 };
