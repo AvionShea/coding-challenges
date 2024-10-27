@@ -1,4 +1,6 @@
 /*
+https://www.codewars.com/kata/58111670e10b53be31000108
+
 Description:
 For this challenge you need to create a simple DISTINCT statement, you want to find all the unique ages.
 people table schema
