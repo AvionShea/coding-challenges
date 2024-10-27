@@ -1,4 +1,6 @@
 /*
+https://www.codewars.com/kata/581113dce10b531b1d0000bd
+
 Description:
 For this challenge you need to create a simple MIN / MAX statement that will return the Minimum and Maximum ages out of all the people.
 people table schema
