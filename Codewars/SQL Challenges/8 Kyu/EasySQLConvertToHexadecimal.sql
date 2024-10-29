@@ -1,4 +1,6 @@
 /*
+https://www.codewars.com/kata/594a50bafd3b7031c1000013
+
 Description:
 to hexYou have access to a table of monsters as follows:
 monsters table schema
