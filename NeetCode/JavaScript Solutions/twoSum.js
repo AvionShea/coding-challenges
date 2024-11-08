@@ -33,6 +33,8 @@ Constraints:
 -10,000,000 <= nums[i] <= 10,000,000
 -10,000,000 <= target <= 10,000,000
 */
+
+//original
 const twoSum = (nums, target) => {
     for (let i = 0; i < nums.length; i++) {
         const complement = target - nums[i];
@@ -46,4 +48,25 @@ const twoSum = (nums, target) => {
     };
 
     return [-1, -1];
+};
+
+//refactor
+function twoSum(nums, target) {
+    //keep track of pairs (pairs arr)
+    const pairs = [];
+
+    //hashmap obj
+    const seenNums = {};
+
+    //loop
+    for (const currentNum of nums) {
+        const diff = target - currentNum;
+
+        if (seenNums[diff]) {
+            pairs.push([currentNum, diff])
+        } else {
+            seenNums[currentNum] = true
+        };
+    };
+    return pairs
 };
