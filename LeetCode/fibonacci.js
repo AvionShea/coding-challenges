@@ -28,6 +28,7 @@ return last num in seq
 
 */
 
+//original
 function fib(numsGenerated) {
     let sequence = [0, 1]
     for (let i = 2; i <= numsGenerated; i++) {
@@ -41,3 +42,15 @@ function fib(numsGenerated) {
 console.log(fib(3), '2')
 console.log(fib(5), '5')
 console.log(fib(7), '13')
+
+//refactor
+function countDown(n) {
+    if (n === 0) {
+        console.log('DONEZO!!')
+    } else {
+        console.log(n)
+        countDown(n - 1)
+    }
+}
+
+countDown(3)
