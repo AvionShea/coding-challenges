@@ -16,7 +16,7 @@ return pairs that = sum
 */
 
 function twoSum(arr, sum) {
-    //keep track of pairs (paris arr)
+    //keep track of pairs (pairs arr)
     const pairs = [];
 
     //hashmap obj
