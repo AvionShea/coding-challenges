@@ -58,3 +58,23 @@ Explanation
 There are 3 positive numbers, 2 negative numbers, and 1 zero in the array.
 The proportions of occurrence are positive: 3/6 = 0.500000 , negative: 2/6 = 0.333333 and zeros: 1/6 = 0.166667 .
 */
+
+function plusMinus(arr) {
+  // filter(element > 0).length/arr.length).toFixed(6)
+  // filter(element < 0).length/arr.length).toFixed(6)
+  // filter(element === 0).length/arr.length).toFixed(6)
+
+  let positive = (
+    arr.filter((number) => number > 0).length / arr.length
+  ).toFixed(6);
+
+  let negative = (
+    arr.filter((number) => number < 0).length / arr.length
+  ).toFixed(6);
+
+  let zero = (arr.filter((number) => number == 0).length / arr.length).toFixed(
+    6
+  );
+
+  return console.log(positive + "\n" + negative + "\n" + zero);
+}
