@@ -60,12 +60,13 @@ function miniMaxSum(arr) {
     //subtract max and min from array
     //return on single line with two spaces
 
-    let sum = arr.reduce((a, b) => a + b, 0)
-    let max = Math.max(...arr)
-    let min = Math.min(...arr)
+    let sum = arr.reduce((a, b) => a + b, 0);
+    let max = Math.max(...arr);
+    let min = Math.min(...arr);
 
-    return (sum - max) + " " + (sum - min)
+    return (sum - max) + " " + (sum - min);
 
 }
 
-console.log(miniMaxSum([1, 3, 5, 7, 9]))
+console.log(miniMaxSum([1, 3, 5, 7, 9]), 16 24);
+console.log(miniMaxSum([1, 2, 3, 4, 5]), 10 14);
