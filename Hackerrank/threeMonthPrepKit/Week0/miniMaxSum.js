@@ -53,3 +53,19 @@ Sum everything except 5, the sum is 1 + 2 + 3 + 4 = 10.
 
 Hints: Beware of integer overflow! Use 64-bit Integer.
 */
+
+function miniMaxSum(arr) {
+    //sum array
+    //pick the max # and min # from new array
+    //subtract max and min from array
+    //return on single line with two spaces
+
+    let sum = arr.reduce((a, b) => a + b, 0)
+    let max = Math.max(...arr)
+    let min = Math.min(...arr)
+
+    return (sum - max) + " " + (sum - min)
+
+}
+
+console.log(miniMaxSum([1, 3, 5, 7, 9]))
