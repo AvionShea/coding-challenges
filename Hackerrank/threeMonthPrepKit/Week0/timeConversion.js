@@ -40,3 +40,21 @@ Sample Input
 Sample Output
 19:05:45
 */
+
+function timeConversion(s) {
+  s = s.split(":");
+  var hours = parseInt(s[0]);
+  var timeFrame = s[2].slice(2);
+  var seconds = s[2].slice(0, 2);
+  if (timeFrame === "PM" && hours !== 12) {
+    hours += 12;
+  }
+  if (hours === 12 && timeFrame === "AM") {
+    hours = "00";
+  } else if (hours < 10) {
+    hours = "0" + hours.toString();
+  } else {
+    hours = hours.toString();
+  }
+  return [hours, s[1], seconds].join(":");
+}
