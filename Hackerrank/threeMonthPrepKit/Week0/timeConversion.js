@@ -58,3 +58,5 @@ function timeConversion(s) {
   }
   return [hours, s[1], seconds].join(":");
 }
+
+console.log(timeConversion("07:05:45PM"), "19:05:45");
