@@ -1,4 +1,6 @@
 /*
+https://www.codewars.com/kata/594a6133704e4daf5d00003d
+
 Description:
 Given the following table 'decimals':
 ** decimals table schema **
