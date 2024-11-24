@@ -38,3 +38,22 @@ Input Format
 The first line contains an integer n, the number of games.
 The second line contains n space-separated integers describing the respective values of score0, score1, ..., score(n-1).
 */
+
+function breakingRecords(scores) {
+  let highScore = scores[0];
+  let lowScore = scores[0];
+  let highCount = 0;
+  let lowCount = 0;
+
+  for (let i = 1; i < scores.length; i++) {
+    if (scores[i] > highScore) {
+      highScore = scores[i];
+      highCount += 1;
+    } else if (scores[i] < lowScore) {
+      lowScore = scores[i];
+      lowCount += 1;
+    }
+  }
+
+  return [highCount, lowCount];
+}
