@@ -39,6 +39,7 @@ The first line contains an integer n, the number of games.
 The second line contains n space-separated integers describing the respective values of score0, score1, ..., score(n-1).
 */
 
+//Solution One
 function breakingRecords(scores) {
   let highScore = scores[0];
   let lowScore = scores[0];
@@ -56,4 +57,21 @@ function breakingRecords(scores) {
   }
 
   return [highCount, lowCount];
+}
+
+//Solution Two
+function breakingRecords(scores) {
+  let minValue = scores[0];
+  let maxValue = scores[0];
+
+  return scores.reduce(
+    (target, score) => {
+      score > maxValue
+        ? (target[0]++, (maxValue = score))
+        : score < minValue && (target[1]++, (minValue = score));
+
+      return target;
+    },
+    [0, 0]
+  );
 }
