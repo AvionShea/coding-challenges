@@ -1,4 +1,6 @@
 /*
+https://www.codewars.com/kata/57f6ad55cca6e045d2000627
+
 Description:
 Write a method, that will get an integer array as parameter and will process every number from this array.
 
