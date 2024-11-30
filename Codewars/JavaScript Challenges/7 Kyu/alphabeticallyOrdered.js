@@ -1,4 +1,6 @@
 /*
+https://www.codewars.com/kata/5a8059b1fd577709860000f6
+
 Description:
 Your task is very simple. Just write a function that takes an input string of lowercase letters and returns true/false depending on whether the string is in alphabetical order or not.
 
