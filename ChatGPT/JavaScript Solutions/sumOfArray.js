@@ -17,6 +17,7 @@ The function should work for both positive and negative numbers.
 The function should return 0 if the array is empty.
 */
 
+//My solution
 function sumOfArray(arr) {
     if (arr.length === 0) {
         return 0;
@@ -24,3 +25,8 @@ function sumOfArray(arr) {
         return arr.reduce((a, b) => a + b, 0);
     }
 };
+
+//ChatGPT solution (improved solution)
+function sumOfArray(arr) {
+    return arr.reduce((a, b) => a + b, 0);
+}
