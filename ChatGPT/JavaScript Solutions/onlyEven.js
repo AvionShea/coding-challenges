@@ -34,3 +34,8 @@ function onlyEven(arr) {
 };
 
 onlyEven([1, 2, 3, 4, 5]);
+
+//ChatGPT Solution
+function onlyEven(arr) {
+    return arr.filter((element) => element % 2 === 0);
+};
