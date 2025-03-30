@@ -39,3 +39,13 @@ onlyEven([1, 2, 3, 4, 5]);
 function onlyEven(arr) {
     return arr.filter((element) => element % 2 === 0);
 };
+
+/* 
+Explanation
+
+Less Code: It eliminates the need for manually pushing elements into a new array.
+
+Better Readability: .filter() explicitly states that we are selecting elements based on a condition.
+
+Efficiency: .map() creates a new array of the same length, whereas .filter() only creates a new array with the matching elements.
+*/
