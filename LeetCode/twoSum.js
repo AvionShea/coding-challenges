@@ -16,21 +16,18 @@ return pairs that = sum
 */
 
 function twoSum(arr, sum) {
-    //keep track of pairs (pairs arr)
-    const pairs = [];
-
-    //hashmap obj
     const seenNums = {};
 
-    //loop
-    for (const currentNum of arr) {
+    for (let i = 0; i < arr.length; i++) {
+        const currentNum = arr[i];
         const diff = sum - currentNum;
 
-        if (seenNums[diff]) {
-            pairs.push([currentNum, diff])
-        } else {
-            seenNums[currentNum] = true
-        };
-    };
-    return pairs
+        if (diff in seenNums) {
+            return [seenNums[diff], i];
+        }
+
+        seenNums[currentNum] = i;
+    }
 };
+
+console.log(twoSum([2, 7, 11, 15], 9));
