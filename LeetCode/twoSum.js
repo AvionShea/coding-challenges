@@ -15,12 +15,12 @@ give me a sum to obtain
 return pairs that = sum
 */
 
-function twoSum(arr, sum) {
+function twoSum(arrOfNums, targetNum) {
     const seenNums = {};
 
-    for (let i = 0; i < arr.length; i++) {
-        const currentNum = arr[i];
-        const diff = sum - currentNum;
+    for (let i = 0; i < arrOfNums.length; i++) {
+        const currentNum = arrOfNums[i];
+        const diff = targetNum - currentNum;
 
         if (diff in seenNums) {
             return [seenNums[diff], i];
