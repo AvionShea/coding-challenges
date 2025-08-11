@@ -51,22 +51,16 @@ const twoSum = (nums, target) => {
 };
 
 //refactor
-function twoSum(nums, target) {
-    //keep track of pairs (pairs arr)
-    const pairs = [];
+function twoSum(arrOfNums, target) {
+    let seenNums = {};
 
-    //hashmap obj
-    const seenNums = {};
-
-    //loop
-    for (const currentNum of nums) {
+    for (let i = 0; i < arrOfNums; i++) {
+        let currentNum = arrOfNums[i];
         const diff = target - currentNum;
 
-        if (seenNums[diff]) {
-            pairs.push([currentNum, diff])
-        } else {
-            seenNums[currentNum] = true
-        };
+        if (diff in seenNums) {
+            return [seenNums[diff], i];
+        }
+        seenNums[currentNum] = i;
     };
-    return pairs
 };
