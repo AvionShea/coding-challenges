@@ -243,8 +243,8 @@ function isAnagram(str1, str2) {
     if (str1.length !== str2.length) {
         return false;
     } else {
-        let sorted1 = str1.split("").sort().join("");
-        let sorted2 = str2.split("").sort().join("");
+        const sorted1 = str1.split("").sort().join("");
+        const sorted2 = str2.split("").sort().join("");
         return sorted1 === sorted2;
     };
 };
@@ -258,8 +258,8 @@ function isAnagram(str1, str2) {
     if (str1.length !== str2.length) {
         return false;
     } else {
-        let sorted1 = sort(str1);
-        let sorted2 = sort(str2);
+        const sorted1 = sort(str1);
+        const sorted2 = sort(str2);
         return sorted1 === sorted2;
     };
 };
