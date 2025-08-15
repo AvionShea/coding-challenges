@@ -292,8 +292,19 @@ Example input: !htrae ot emocleW
 Example output: Welcome to earth!
 */
 
+//Method
 function reverseString(title) {
     return title.split("").reverse().join("");
+}
+
+//Manual
+function manuallyReverseString(str) {
+    let reversedString = "";
+
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversedString += str[i];
+    }
+    return reversedString;
 }
 
 /*
