@@ -212,9 +212,7 @@ Example input: "I :heart: my elephant"
 Example output: "I 💜 my elephant"
 */
 function emojifyPhrase(phrase) {
-    return phrase.split(" ").map((word) => {
-        return emojifyWord(word);
-    }).join(" ");
+    return phrase.split(" ").map((word) => emojifyWord(word)).join(" ");
 };
 
 console.log(emojifyWord(":heart:")); //💜
