@@ -321,3 +321,8 @@ function reverseStringsInArray(arr) {
 
 console.log(reverseString(title));
 console.log(reverseStringsInArray(messages));
+
+function isPalindrome(str) {
+    const reversedStr = str.split("").reverse().join("");
+    return reversedStr === str;
+};
