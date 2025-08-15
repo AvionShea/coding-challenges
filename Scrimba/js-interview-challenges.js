@@ -305,7 +305,7 @@ reverse the strings manually.
 */
 
 function reverseStringsInArray(arr) {
-    return arr;
+    return arr.map((string) => reverseString(string));
 }
 
 console.log(reverseString(title));
