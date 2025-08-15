@@ -221,3 +221,48 @@ console.log(emojifyWord("elephant")); //elephant
 
 console.log(emojifyPhrase("I :heart: my :cat:")); //I 💜 my 🐱
 console.log(emojifyPhrase("I :heart: my :elephant:")); //I 💜 my elephant
+
+/* 
+
+Anagrams are groups of words that can be spelled with the same letters. 
+For example, the letters in "pea" can be rearrange to spell "ape", and 
+the letters in "allergy" can be rearranged to spell "gallery."
+
+Write a function to check if two strings of lowercase letters are anagrams. 
+Return true if the word is an anagram. Return false if it isn't. 
+
+Example input: "allergy", "gallery"
+Example output: true
+
+Example input: "rainbow", "crossbow"
+Example output: false
+
+*/
+
+function isAnagram(str1, str2) {
+    if (str1.length !== str2.length) {
+        return false;
+    } else {
+        let sorted1 = str1.split("").sort().join("");
+        let sorted2 = str2.split("").sort().join("");
+        return sorted1 === sorted2;
+    };
+};
+
+//With helper function
+function sort(word) {
+    return word.split("").sort().join("");
+}
+
+function isAnagram(str1, str2) {
+    if (str1.length !== str2.length) {
+        return false;
+    } else {
+        let sorted1 = sort(str1);
+        let sorted2 = sort(str2);
+        return sorted1 === sorted2;
+    };
+};
+
+console.log(isAnagram("allergy", "gallery"));
+console.log(isAnagram("treasure", "measure"));
