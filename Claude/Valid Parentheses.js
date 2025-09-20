@@ -40,6 +40,6 @@ function isValidParentheses(str) {
     return bracketPairs.length === 0;
 }
 
-console.log(isValidParentheses("()")), true;
+console.log(isValidParentheses("()"), true);
 console.log(isValidParentheses("()[]{}"), true);
 console.log(isValidParentheses("(]"), false);
